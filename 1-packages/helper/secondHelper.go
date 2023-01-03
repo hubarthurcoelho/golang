@@ -2,6 +2,6 @@ package helper
 
 import "fmt"
 
-func secondHelper(text string, number int) {
-	fmt.Println(text, number)
+func secondHelper(text string) {
+	fmt.Println(text)
 }
