@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"modules/helper"
+)
 
 func main() {
 	var variable1 string = "variable 1"
@@ -17,4 +20,5 @@ func main() {
 	fmt.Println(variable5, variable6)
 	variable5, variable6 = variable6, variable5
 	fmt.Println(variable5, variable6)
+	helper.Helper() // getting the helper using the modules
 }
