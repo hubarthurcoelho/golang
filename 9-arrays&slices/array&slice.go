@@ -19,4 +19,10 @@ func main() {
 	// this slice will point to the memory address of the array elements. If the elements change, the sliced elements will also change
 	array[1] = 4
 	fmt.Println(arraySlice)
+	// internal array
+	slice1 := make([]int, 3, 5) // type : slice size : array length
+	fmt.Println(slice1)
+	fmt.Println(len(slice1)) // len() gets the length of the slice
+	fmt.Println(cap(slice1)) // cap() gets the maximum size of the array
+	// if you append enough elements to surpass the array size, go will double the array max size
 }
